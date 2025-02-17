@@ -1,0 +1,35 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Fonte e detalhes da letra*/
+    background-color: #7eccd6;
+    display: flex; /* usa modelo FlexBox*/
+    align-items: center; /* centraliza verticalmente*/
+    justify-content: center; /* centraliza horizontalmente*/
+    height: 100vh; /* define altura da tela - vetical height 100%*/
+}
+.Card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px; /*10px é superior e inferior e 15px é direita e esquerda*/
+    border-radius:  5px; /*borda*/
+    cursor:  pointer; /*ponteiro do mouse faz o l*/
+}
+.image{
+    border-radius: 50%;
+    width: 130px; /*largura*/
+    height: 130px;
+    margin-bottom: 10px; /*espaçamento externo abaixo*/
+}
+button:hover {
+    background-color: rgb(4, 33, 129);
+    
+
+}
