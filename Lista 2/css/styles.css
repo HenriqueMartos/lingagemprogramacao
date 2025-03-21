@@ -10,15 +10,17 @@ body {
     /* centraliza horizontalmente*/
     height: 100vh;
     /* define altura da tela - vetical height 100%*/
+    text-shadow: 0px 0px 20px rgb(255, 251, 0);
 }
 
 .Card {
-    background-image: url(https://th.bing.com/th/id/OIP.T3bVdxGQCrzqibTtOPi-YwHaE8?rs=1&pid=ImgDetMain);
+    background-image: url(https://img.freepik.com/foto-gratis/tanque-guerra-equipo-armado-utilizado-combate_23-2151627548.jpg);
     background-color: white;
-    padding: 20px;
+    padding: 90px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
+    color: white;
 }
 
 button {
@@ -35,11 +37,12 @@ button {
 
 .image {
     border-radius: 50%;
-    width: 200px;
+    width: 205px;
     /*largura*/
-    height: 200px;
+    height: 195px;
     margin-bottom: 10px;
     /*espaçamento externo abaixo*/
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar {
@@ -51,6 +54,8 @@ button {
     position: fixed;
     left: 0;
     top: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px #007bff;
 
 }
 .sidebar ul{
