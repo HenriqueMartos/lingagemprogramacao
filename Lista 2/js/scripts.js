@@ -116,3 +116,78 @@ function exe5(){
             document.getElementById("resp").textContent = "A divisão dos valores é " + resp;
     }
 }
+function exe6(){
+    let num1 = Number(document.getElementById("num1").value)
+    let num2 = Number(document.getElementById("num2").value)
+    let op = Number(document.getElementById("op").value)
+
+    switch(op){
+        case 1:
+            //resp = num1 ** num2 forma de fazer o calcúlo tmb
+            document.getElementById("resp").textContent = Math.pow(num1, num2);
+        break
+        case 2:
+            document.getElementById("resp").innerHTML = Math.sqrt(num1).toFixed(2) + " <br/> " + Math.sqrt(num2).toFixed(2);
+        break
+        case 3:
+            document.getElementById("resp").innerHTML = Math.cbrt(num1).toFixed(2) + " <br/> " + Math.cbrt(num2).toFixed(2);
+        break
+    }
+}
+function exe7(){
+    let sal = Number(document.getElementById("sal").value)
+    if(sal < 500){
+        resp = sal + (sal*0.3)
+        document.getElementById("resp").textContent = "Novo salário será: R$" + resp;
+    }
+    else{
+        document.getElementById("resp").textContent = "Novo salário será: R$" + sal;
+    }
+
+}
+function exe8(){
+    let sal = Number(document.getElementById("sal").value)
+    if(sal <= 300){
+        resp = sal + (sal*0.35)
+        document.getElementById("resp").textContent = "Novo salário será: R$" + resp;
+    }
+    else{
+        resp = sal + (sal*0.15)
+        document.getElementById("resp").textContent = "Novo salário será: R$" + resp;
+    }
+}
+function exe9(){
+    let sal = Number(document.getElementById("sal").value)
+    
+    if (sal <= 200){
+        resp = (sal*0.10)
+        //document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponíel: R$" + resp;
+    }
+    else if(sal > 200 && sal <= 300){
+        resp = (sal*0.20)
+       // document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponíel: R$" + resp;
+    }
+    else if(sal > 300 && sal <= 400){
+        resp = (sal*0.25)
+       // document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponíel: R$" + resp;
+    }
+    else if(sal > 400){
+        resp = (sal*0.30)
+       // document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponíel: R$" + resp;
+    }
+    document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponível: R$" + resp; //código limpo e menor (peso de arquivo)
+}
+function exe10(){
+    let custo = Number(document.getElementById("custo").value)
+
+    if (custo <= 12000){
+        valor = custo + (custo*0.05) 
+    }
+    else if (custo >12000 && custo <=25000){
+        valor = custo + (custo*0.1) + (custo*0.15)
+    }
+    else if (custo > 25000){
+        valor = custo + (custo*0.15) + (custo*0.20)
+    }
+    document.getElementById("resp").innerHTML = `Preço ao consumidor final: R$${valor}`;
+}
