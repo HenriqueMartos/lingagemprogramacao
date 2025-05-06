@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <!-- Largura da pagina será a largura do dispositivo-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercício 2</title>
+        <title>Exercício 24</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/exercicio1.css">
         <script src="/Lista 2/js/scripts.js" defer> </script>
@@ -34,15 +34,23 @@
         <div class="container">
 
             <div class="Card"> 
-                <h1> Exercício 2 </h1>
-                <p> Média Aritimética </p>
+                <h1> Exercício 24 </h1>
                 <form>
-                    <label> Nota 1 </label>
-                    <input type="number" id="nota1"/>
-                    <label> Nota 2 </label>
-                    <input type="number" id="nota2"/>
-                    <button onclick="exe2()" type="button"> Calcular</button>
-                    <label id="medar"> </label>
+                    <label> Preço do produto </label>
+                    <input type="number" id="num1"/>
+                    <label> Categoria </label>
+                    <select id= "cat">
+                        <option value="1"> Limpeza </option>
+                        <option value="2"> Alimentação </option>
+                        <option value="3"> Vestuário </option>
+                    </select>
+                    <label> Situação </label>
+                    <select id= "sit">
+                        <option value="R"> Necessita de refrigeração </option>
+                        <option value="M"> Não Necessita de refrigeração </option>
+                    </select>
+                    <button onclick="exe6()" type="button"> Calcular</button>
+                    <label id="resp"> </label>
                 </form>
             </div>
         </div>

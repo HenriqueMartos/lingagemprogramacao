@@ -158,8 +158,8 @@ function exe8(){
 }
 function exe9(){
     let sal = Number(document.getElementById("sal").value)
-    
-    if (sal <= 200){
+    resp = 0
+    if (sal <= 200 && sal >= 0){
         resp = (sal*0.10)
         //document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponíel: R$" + resp;
     }
@@ -175,7 +175,12 @@ function exe9(){
         resp = (sal*0.30)
        // document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponíel: R$" + resp;
     }
-    document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponível: R$" + resp; //código limpo e menor (peso de arquivo)
+    else{
+        document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Saldo não pode ser negativo!";
+        return;
+        
+    }
+    document.getElementById("resp").innerHTML = "Saldo Médio: " + sal + "<br/>Crédito disponível: R$ " + resp; //código limpo e menor (peso de arquivo)
 }
 function exe10(){
     let custo = Number(document.getElementById("custo").value)

@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
-
 body {
     font-family: Arial, serif;
     /* Fonte e detalhes da letra*/
-    background-color: #808080;
+    background-color: #7eccd6;
     display: flex;
     /* usa modelo FlexBox*/
     align-items: center;
@@ -12,17 +10,14 @@ body {
     /* centraliza horizontalmente*/
     height: 100vh;
     /* define altura da tela - vetical height 100%*/
-    text-shadow: 0px 0px 20px rgb(255, 251, 0);
 }
 
 .Card {
-    background-image: url(https://img.freepik.com/foto-gratis/tanque-guerra-equipo-armado-utilizado-combate_23-2151627548.jpg);
     background-color: white;
-    padding: 90px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
-    color: white;
 }
 
 button {
@@ -34,17 +29,16 @@ button {
     border-radius: 5px;
     /*borda*/
     cursor: pointer;
-    /*ponteiro do mouse faz o l*/   
+    /*ponteiro do mouse faz o l*/
 }
 
 .image {
     border-radius: 50%;
-    width: 205px;
+    width: 180px;
     /*largura*/
-    height: 195px;
+    height: 180px;
     margin-bottom: 10px;
     /*espaçamento externo abaixo*/
-    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar {
@@ -56,11 +50,7 @@ button {
     position: fixed;
     left: 0;
     top: 0;
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 5px #007bff;
-    background-image: url(https://th.bing.com/th/id/OIP.fSLPrjuoJoIn_FOuU72MkQHaL0?rs=1&pid=ImgDetMain);
-    box-shadow: 5px 0px 10px rgba(0, 0, 82, 0.658);
-    font-family: "Nosifer", sans-serif;;
+
 }
 .sidebar ul{
     list-style: none;
