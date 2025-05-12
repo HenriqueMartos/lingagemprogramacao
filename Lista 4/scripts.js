@@ -165,3 +165,48 @@ function exe7(){
     }
     alert(`Quantidade de Números negaivos: ${neg}; Soma dos Números positivos: ${tpos}`)
 }
+function exe8(){
+    let nomes = [], med = []
+    for(let i=0; i<7;i++){
+        nomes.push(prompt(`Nome do meliante ${i+1}`))
+        med.push(Number(prompt(`Insira a média do ${nomes[i]}`)))
+    }
+    let maior = med[0]
+    for(let i=0;i<7;i++){
+        if(med[i]> maior){
+            maior = med[i]
+        }
+    }
+    let pos = med.indexOf(maior)
+    alert(`Nome do aluno com maior média ${nomes[pos]}`)
+
+    for(let i=0;i<7;i++){
+        if(med[i] <5){
+            alert(`${nomes[i]} Precisa tirar ${10-med[i]}`)
+        }
+    }
+}
+function exe9(){
+    let nomes = [], codigos = [], precos = []
+    for (let i =0; i<2;i++){
+        nomes.push(prompt(`Nome do produto ${i+1}`))
+        codigos.push(Number(prompt(`Código do ${nomes[i]}`)))
+        precos.push(Number(prompt(`Informe o preço do ${nomes[i]}`)))
+    }
+    let novopr = []
+    let tab = ""
+    for (let i =0; i<2;i++){
+        if((codigos[i] %2 == 0) && (precos[i] > 1000)){
+            novopr[i] = (precos[i]*1.2) 
+        }
+        else if(codigos[i] %2 ==0 ){
+            novopr[i] = (precos[i]*1.15)
+        }
+        else if(precos[i] > 1000 ){
+            novopr[i] = (precos[i]*1.1)
+        }
+        // tab += (`${nomes[i]} - ${codigos[i]} - ${precos[i]} - ${novopr[i]} `)
+             alert(`${nomes[i]} - ${codigos[i]} - ${precos[i]} - ${parseInt(novopr[i])}`)
+    }
+
+}
