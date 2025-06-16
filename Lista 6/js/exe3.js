@@ -1,4 +1,3 @@
- 
 function entrada(vet){
     for(let i=0; i<3;i++){
         // cria objeto
@@ -59,3 +58,4 @@ function exe3(){
  compra(vetor)
  saida(vetor)
  }
+ exe3()
